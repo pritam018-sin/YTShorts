@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import ThreeDGrid from './components/ThreeDGrid.jsx'
+import YetiLogin from './components/YetiLogin.jsx'
 
 function App() {
 
 
   return (
     <div>
-      <ThreeDGrid />
+      <YetiLogin />
     </div>
   )
 }
