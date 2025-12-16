@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.container {
+  display: flex;
+  width: 90vw;
+  /* Mobile pe column, desktop pe row dikhana ho toh media query laga sakte hain */
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5; /* Default size (chhota) */
+  margin: 10px;
+  position: relative;
+  transition: all 700ms ease-in-out; /* Smooth Animation */
+  -webkit-transition: all 700ms ease-in-out;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0; /* Text chhupa hua rahega */
+  font-family: 'Muli', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Jab panel Active hoga */
+.panel.active {
+  flex: 5; /* Yeh bada ho jayega */
+}
+
+/* Jab panel Active ho, tabhi text dikhega */
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s; /* Thoda delay taki panel khulne ke baad text aaye */
+}
+
+/* Mobile Responsiveness (Shorts ke liye optional par recommended) */
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none; /* Mobile par sirf 3 card dikhao taaki clutter na ho */
+  }
+}
