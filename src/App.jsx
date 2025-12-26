@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import ExpandingCards from './components/ExpandingCards.jsx'
+import SpotEncrypt from './components/SpotEncrypt.jsx'
+// import LiquidInput from './components/LiquidInput.jsx'
+// import NetflixLogo from './components/NetflixLogo.jsx'
+// import ExpandingCards from './components/ExpandingCards.jsx'
 // import FlipAuth from './components/FlipAuth.jsx'
 // import AuthPage from './components/AuthPage.jsx'
 // import YetiLogin from './components/YetiLogin.jsx'
@@ -13,7 +16,10 @@ function App() {
 
   return (
     <div>
-      <ExpandingCards />
+      <SpotEncrypt />
+      {/* <LiquidInput /> */}
+      {/* <NetflixLogo /> */}
+      {/* <ExpandingCards /> */}
       {/* <FlipAuth /> */}
       {/* <AuthPage /> */}
       {/* <YetiLogin /> */}

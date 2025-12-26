@@ -41,28 +41,34 @@ const SpotlightGrid = () => {
         {/* --- THE SPOTLIGHT OVERLAY (The Magic Part) --- */}
         {/* Yeh ek invisible layer hai jo mouse ke piche ghumti hai */}
         <div 
-            className="pointer-events-none absolute -inset-px transition duration-300 opacity-0 group-hover:opacity-100 z-30"
+            className="pointer-events-none absolute -inset-px transition
+             duration-300 opacity-0 group-hover:opacity-100 z-30"
             style={{
                 opacity,
-                background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(6,182,212,0.15), transparent 40%)`
+                background: `radial-gradient(600px circle at ${position.x}px ${position.y}px,
+                 rgba(6,182,212,0.15), transparent 40%)`
             }}
         />
 
         {/* --- CARDS --- */}
         {[1, 2, 3, 4, 5, 6].map((item) => (
-          <div key={item} className="relative group rounded-xl border border-white/10 bg-neutral-900 px-8 py-10 overflow-hidden">
+          <div key={item} className="relative group rounded-xl 
+          border border-white/10 bg-neutral-900 px-8 py-10 overflow-hidden">
             
             {/* Inner Border Glow (Mouse ke pass aane par border bright hoga) */}
             <div
-              className="absolute -inset-px opacity-0 group-hover:opacity-100 transition duration-300"
+              className="absolute -inset-px opacity-0 group-hover:opacity-100
+               transition duration-300"
               style={{
-                background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.1), transparent 40%)`
+                background: `radial-gradient(600px circle at ${position.x}px 
+                ${position.y}px, rgba(255,255,255,0.1), transparent 40%)`
               }}
             />
             
             {/* Card Content */}
             <div className="relative z-10">
-              <span className="mb-4 inline-flex items-center justify-center rounded-lg bg-neutral-800 p-3 shadow-lg">
+              <span className="mb-4 inline-flex items-center 
+              justify-center rounded-lg bg-neutral-800 p-3 shadow-lg">
                 <span className="text-2xl">🚀</span>
               </span>
               <h3 className="mt-4 text-xl font-bold text-white">Feature {item}</h3>
@@ -82,4 +88,4 @@ const SpotlightGrid = () => {
   );
 };
 
-export default SpotlightGrid;
+export default SpotlightGrid; 
