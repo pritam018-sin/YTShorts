@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import SpotEncrypt from './components/SpotEncrypt.jsx'
+import NeonCard from './components/NeonCard.jsx'
+// import SpotEncrypt from './components/SpotEncrypt.jsx'
 // import LiquidInput from './components/LiquidInput.jsx'
 // import NetflixLogo from './components/NetflixLogo.jsx'
 // import ExpandingCards from './components/ExpandingCards.jsx'
@@ -16,7 +17,8 @@ function App() {
 
   return (
     <div>
-      <SpotEncrypt />
+      <NeonCard />
+      {/* <SpotEncrypt /> */}
       {/* <LiquidInput /> */}
       {/* <NetflixLogo /> */}
       {/* <ExpandingCards /> */}
